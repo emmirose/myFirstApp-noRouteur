@@ -1,15 +1,22 @@
-<h2>Fiche de contact</h2>
+<div class="user-container">
+  <div class="infos">
+    <h2>Fiche de contact</h2>
 
-<img [src]="user.photo" [alt]="user.firstName">
-<h3>Nom : {{user.name}}</h3>
-<h3>Prénom : {{user.firstName}}</h3>
-<div class="age">
-<h3 [hidden] = "isShowDiv">Age : {{user.age}}</h3>
-<button (click)=toggleDisplayDiv()> Afficher/cacher mon âge </button>
+    <img [src]="user.photo" [alt]="user.firstName">
+    <h3>Nom : {{user.name}}</h3>
+    <h3>Prénom : {{user.firstName}}</h3>
+    <div class="age">
+    <h3 [hidden] = "isShowDiv">Age : {{user.age}}</h3>
+    <button (click)=toggleDisplayDiv()> Afficher/cacher mon âge </button>
+    </div>
+    <p>{{user.quote}}</p>
+    <input type="text" [(ngModel)]="user.quote">
+  </div>
+
+    <div class="playlist">
+      <h3>🎵</h3>
+      <ul>
+        <li *ngFor="let song of songList"> {{song}}</li>
+      </ul>
+    </div>
 </div>
-<p>{{user.quote}}</p>
-<input type="text" [(ngModel)]="user.quote">
-
-<ul>
-  <li *ngFor="let song of songList"> {{song}}</li>
-</ul>

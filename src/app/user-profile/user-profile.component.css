@@ -11,3 +11,29 @@
   border: none;
   margin-left: 16px;
 }
+
+li {
+  list-style: none;
+}
+
+.playlist {
+  display: flex;
+  align-items: center;
+}
+
+.playlist h3 {
+  font-size: 8rem;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+}
+.user-container {
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+
+}

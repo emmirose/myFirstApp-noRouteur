@@ -1,0 +1,15 @@
+button {
+  margin: 30vh auto;
+  width: 30%;
+  background-color: yellowgreen;
+  border: none;
+  padding: 16px;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  color: beige;
+}
+
+div {
+  width: 100%;
+  display: flex;
+}
